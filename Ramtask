@@ -1,0 +1,13 @@
+Name=(input("Enter the account holder Name:"))
+Bank_Name=(input("Enter the Bank Name:"))
+Branch=(input("Enter the branch Name:"))
+Withdraw_Amount=int(input("Enter the withdraw Amount:"))
+Avaliable_balance=50000
+Balance=Avaliable_balance-Withdraw_Amount
+statement="Hi {} Bank_Name{} from witch Branch {} Your Balance Avaliable {} "
+import pytz
+import datetime
+Ist=pytz.timezone("Asia/Kolkata")
+Current_Time=datetime.datetime.now(Ist)
+print(statement.format(Name,Bank_Name,Branch,Balance,))
+print(Current_Time)
